@@ -75,15 +75,14 @@ export default {
   ],
   preview: {
     select: {
-      images: "images",
+      title: "project_title",
       image: "images.0",
     },
     prepare(selection) {
-      const { images, image } = selection;
-
+      const { title, image } = selection;
       return {
-        title: `Gallery block of ${Object.keys(images).length} images`,
-        subtitle: `Alt text: ${images.alt}`,
+        title,
+
         media: image,
       };
     },
