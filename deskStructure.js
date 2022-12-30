@@ -2,27 +2,33 @@ export default (S) =>
   S.list()
     .title("Point Cloud Creative")
     .items([
-      S.listItem()
+      S.documentListItem()
         .title("Settings")
-        .child(
-          S.documentListItem()
-            .id("siteSettings")
-            .title("Settings")
-            .schemaType("project")
-        ),
+        .id("siteSettings")
+        .schemaType("siteSettings"),
       S.divider(),
       S.listItem()
         .title("Photography")
         .child(
           S.list()
-            .title("Categories")
+            .title("Photography")
             .items([
+              S.documentListItem()
+                .title("Menu Background Image")
+                .id("photographyMenuBackgroundImage")
+                .schemaType("menuBackgroundImage"),
+              S.divider(),
               S.listItem()
                 .title("Travel")
                 .child(
                   S.list()
                     .title("Travel Projects")
                     .items([
+                      S.documentListItem()
+                        .title("Menu Background Image")
+                        .id("travelPhotographyMenuBackgroundImage")
+                        .schemaType("menuBackgroundImage"),
+                      S.divider(),
                       S.documentListItem()
                         .title("Project 1")
                         .id("travelProject1")
@@ -72,6 +78,11 @@ export default (S) =>
                     .title("Product Projects")
                     .items([
                       S.documentListItem()
+                        .title("Menu Background Image")
+                        .id("productPhotographyMenuBackgroundImage")
+                        .schemaType("menuBackgroundImage"),
+                      S.divider(),
+                      S.documentListItem()
                         .title("Project 1")
                         .id("productProject1")
                         .schemaType("project"),
@@ -119,6 +130,11 @@ export default (S) =>
                   S.list()
                     .title("Fashion Projects")
                     .items([
+                      S.documentListItem()
+                        .title("Menu Background Image")
+                        .id("fashionPhotographyMenuBackgroundImage")
+                        .schemaType("menuBackgroundImage"),
+                      S.divider(),
                       S.documentListItem()
                         .title("Project 1")
                         .id("fashionProject1")
@@ -168,6 +184,11 @@ export default (S) =>
                     .title("Landscape Projects")
                     .items([
                       S.documentListItem()
+                        .title("Menu Background Image")
+                        .id("landscapePhotographyMenuBackgroundImage")
+                        .schemaType("menuBackgroundImage"),
+                      S.divider(),
+                      S.documentListItem()
                         .title("Project 1")
                         .id("landscapeProject1")
                         .schemaType("project"),
@@ -216,6 +237,11 @@ export default (S) =>
                     .title("Drone Projects")
                     .items([
                       S.documentListItem()
+                        .title("Menu Background Image")
+                        .id("dronePhotographyMenuBackgroundImage")
+                        .schemaType("menuBackgroundImage"),
+                      S.divider(),
+                      S.documentListItem()
                         .title("Project 1")
                         .id("droneProject1")
                         .schemaType("project"),
@@ -257,15 +283,79 @@ export default (S) =>
                         .schemaType("project"),
                     ])
                 ),
-              ...S.documentTypeListItems().filter(
-                (listItem) => !["project"].includes(listItem.getId())
-              ),
             ])
         ),
 
-      S.listItem().title("video"),
-      S.listItem().title("Drone"),
-      S.listItem().title("3D"),
-      S.listItem().title("Stream"),
-      S.listItem().title("About"),
+      S.listItem()
+        .title("Video")
+        .child(
+          S.list()
+            .title("Video")
+            .items([
+              S.documentListItem()
+                .title("Menu Background Image")
+                .id("videoMenuBackgroundImage")
+                .schemaType("menuBackgroundImage"),
+              S.divider(),
+            ])
+        ),
+      S.listItem()
+        .title("Drone")
+        .child(
+          S.list()
+            .title("Drone")
+            .items([
+              S.documentListItem()
+                .title("Menu Background Image")
+                .id("droneMenuBackgroundImage")
+                .schemaType("menuBackgroundImage"),
+              S.divider(),
+            ])
+        ),
+
+      S.listItem()
+        .title("3D")
+        .child(
+          S.list()
+            .title("3D")
+            .items([
+              S.documentListItem()
+                .title("Menu Background Image")
+                .id("3dMenuBackgroundImage")
+                .schemaType("menuBackgroundImage"),
+              S.divider(),
+            ])
+        ),
+      S.listItem()
+        .title("Stream")
+        .child(
+          S.list()
+            .title("Stream")
+            .items([
+              S.documentListItem()
+                .title("Menu Background Image")
+                .id("streamMenuBackgroundImage")
+                .schemaType("menuBackgroundImage"),
+              S.divider(),
+            ])
+        ),
+      S.listItem()
+        .title("About")
+        .child(
+          S.list()
+            .title("About")
+            .items([
+              S.documentListItem()
+                .title("Menu Background Image")
+                .id("aboutMenuBackgroundImage")
+                .schemaType("menuBackgroundImage"),
+              S.divider(),
+            ])
+        ),
+      ...S.documentTypeListItems().filter(
+        (listItem) =>
+          !["project", "siteSettings", "menuBackgroundImage"].includes(
+            listItem.getId()
+          )
+      ),
     ]);
