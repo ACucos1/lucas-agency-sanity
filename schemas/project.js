@@ -10,8 +10,9 @@ export default {
     },
     {
       name: "project_description",
-      type: "text",
-      title: "Description",
+      type: "array",
+      of: [{ type: "block" }],
+      // title: "Description",
     },
     {
       name: "background_image",
