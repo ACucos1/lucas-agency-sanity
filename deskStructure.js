@@ -460,8 +460,11 @@ export default (S) =>
         ),
       ...S.documentTypeListItems().filter(
         (listItem) =>
-          !["project", "siteSettings", "menuBackgroundImage"].includes(
-            listItem.getId()
-          )
+          ![
+            "project",
+            "siteSettings",
+            "menuBackgroundImage",
+            "videoProject",
+          ].includes(listItem.getId())
       ),
     ]);
