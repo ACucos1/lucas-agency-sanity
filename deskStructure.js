@@ -297,6 +297,112 @@ export default (S) =>
                 .id("videoMenuBackgroundImage")
                 .schemaType("menuBackgroundImage"),
               S.divider(),
+              S.listItem()
+                .title("Travel")
+                .child(
+                  S.list()
+                    .title("Travel Projects")
+                    .items([
+                      S.documentListItem()
+                        .title("Menu Background Image")
+                        .id("travelPhotographyMenuBackgroundImage")
+                        .schemaType("menuBackgroundImage"),
+                      S.divider(),
+                      S.documentListItem()
+                        .title("Project 1")
+                        .id("travelVideoProject1")
+                        .schemaType("project"),
+                      S.documentListItem()
+                        .title("Project 2")
+                        .id("travelVideoProject2")
+                        .schemaType("project"),
+                      S.documentListItem()
+                        .title("Project 3")
+                        .id("travelVideoProject3")
+                        .schemaType("project"),
+                      S.documentListItem()
+                        .title("Project 4")
+                        .id("travelVideoProject4")
+                        .schemaType("project"),
+                      S.documentListItem()
+                        .title("Project 5")
+                        .id("travelVideoProject5")
+                        .schemaType("project"),
+                      S.documentListItem()
+                        .title("Project 6")
+                        .id("travelVideoProject6")
+                        .schemaType("project"),
+                      S.documentListItem()
+                        .title("Project 7")
+                        .id("travelVideoProject7")
+                        .schemaType("project"),
+                      S.documentListItem()
+                        .title("Project 8")
+                        .id("travelVideoProject8")
+                        .schemaType("project"),
+                      S.documentListItem()
+                        .title("Project 9")
+                        .id("travelVideoProject9")
+                        .schemaType("project"),
+                      S.documentListItem()
+                        .title("Project 10")
+                        .id("travelVideoProject10")
+                        .schemaType("project"),
+                    ])
+                ),
+              S.listItem()
+                .title("Product")
+                .child(
+                  S.list()
+                    .title("Product Projects")
+                    .items([
+                      S.documentListItem()
+                        .title("Menu Background Image")
+                        .id("productPhotographyMenuBackgroundImage")
+                        .schemaType("menuBackgroundImage"),
+                      S.divider(),
+                      S.documentListItem()
+                        .title("Project 1")
+                        .id("productVideoProject1")
+                        .schemaType("project"),
+                      S.documentListItem()
+                        .title("Project 2")
+                        .id("productVideoProject2")
+                        .schemaType("project"),
+                      S.documentListItem()
+                        .title("Project 3")
+                        .id("productVideoProject3")
+                        .schemaType("project"),
+                      S.documentListItem()
+                        .title("Project 4")
+                        .id("productVideoProject4")
+                        .schemaType("project"),
+                      S.documentListItem()
+                        .title("Project 5")
+                        .id("productVideoProject5")
+                        .schemaType("project"),
+                      S.documentListItem()
+                        .title("Project 6")
+                        .id("productVideoProject6")
+                        .schemaType("project"),
+                      S.documentListItem()
+                        .title("Project 7")
+                        .id("productVideoProject7")
+                        .schemaType("project"),
+                      S.documentListItem()
+                        .title("Project 8")
+                        .id("productVideoProject8")
+                        .schemaType("project"),
+                      S.documentListItem()
+                        .title("Project 9")
+                        .id("productVideoProject9")
+                        .schemaType("project"),
+                      S.documentListItem()
+                        .title("Project 10")
+                        .id("productVideoProject10")
+                        .schemaType("project"),
+                    ])
+                ),
             ])
         ),
       S.listItem()
