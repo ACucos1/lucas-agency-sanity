@@ -311,43 +311,43 @@ export default (S) =>
                       S.documentListItem()
                         .title("Project 1")
                         .id("travelVideoProject1")
-                        .schemaType("project"),
+                        .schemaType("videoProject"),
                       S.documentListItem()
                         .title("Project 2")
                         .id("travelVideoProject2")
-                        .schemaType("project"),
+                        .schemaType("videoProject"),
                       S.documentListItem()
                         .title("Project 3")
                         .id("travelVideoProject3")
-                        .schemaType("project"),
+                        .schemaType("videoProject"),
                       S.documentListItem()
                         .title("Project 4")
                         .id("travelVideoProject4")
-                        .schemaType("project"),
+                        .schemaType("videoProject"),
                       S.documentListItem()
                         .title("Project 5")
                         .id("travelVideoProject5")
-                        .schemaType("project"),
+                        .schemaType("videoProject"),
                       S.documentListItem()
                         .title("Project 6")
                         .id("travelVideoProject6")
-                        .schemaType("project"),
+                        .schemaType("videoProject"),
                       S.documentListItem()
                         .title("Project 7")
                         .id("travelVideoProject7")
-                        .schemaType("project"),
+                        .schemaType("videoProject"),
                       S.documentListItem()
                         .title("Project 8")
                         .id("travelVideoProject8")
-                        .schemaType("project"),
+                        .schemaType("videoProject"),
                       S.documentListItem()
                         .title("Project 9")
                         .id("travelVideoProject9")
-                        .schemaType("project"),
+                        .schemaType("videoProject"),
                       S.documentListItem()
                         .title("Project 10")
                         .id("travelVideoProject10")
-                        .schemaType("project"),
+                        .schemaType("videoProject"),
                     ])
                 ),
               S.listItem()
