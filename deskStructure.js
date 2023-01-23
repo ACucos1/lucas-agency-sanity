@@ -416,6 +416,59 @@ export default (S) =>
                 .id("droneMenuBackgroundImage")
                 .schemaType("menuBackgroundImage"),
               S.divider(),
+              S.listItem()
+                .title("Travel")
+                .child(
+                  S.list()
+                    .title("Travel Projects")
+                    .items([
+                      S.documentListItem()
+                        .title("Menu Background Image")
+                        .id("travelDroneMenuBackgroundImage")
+                        .schemaType("menuBackgroundImage"),
+                      S.divider(),
+                      S.documentListItem()
+                        .title("Project 1")
+                        .id("travelDroneProject1")
+                        .schemaType("videoProject"),
+                      S.documentListItem()
+                        .title("Project 2")
+                        .id("travelDroneProject2")
+                        .schemaType("videoProject"),
+                      S.documentListItem()
+                        .title("Project 3")
+                        .id("travelDroneProject3")
+                        .schemaType("videoProject"),
+                      S.documentListItem()
+                        .title("Project 4")
+                        .id("travelDroneProject4")
+                        .schemaType("videoProject"),
+                      S.documentListItem()
+                        .title("Project 5")
+                        .id("travelDroneProject5")
+                        .schemaType("videoProject"),
+                      S.documentListItem()
+                        .title("Project 6")
+                        .id("travelDroneProject6")
+                        .schemaType("videoProject"),
+                      S.documentListItem()
+                        .title("Project 7")
+                        .id("travelDroneProject7")
+                        .schemaType("videoProject"),
+                      S.documentListItem()
+                        .title("Project 8")
+                        .id("travelDroneProject8")
+                        .schemaType("videoProject"),
+                      S.documentListItem()
+                        .title("Project 9")
+                        .id("travelDroneProject9")
+                        .schemaType("videoProject"),
+                      S.documentListItem()
+                        .title("Project 10")
+                        .id("travelDroneProject10")
+                        .schemaType("videoProject"),
+                    ])
+                ),
             ])
         ),
 
@@ -430,34 +483,87 @@ export default (S) =>
                 .id("3dMenuBackgroundImage")
                 .schemaType("menuBackgroundImage"),
               S.divider(),
+              S.listItem()
+                .title("Augmented Reality")
+                .child(
+                  S.list()
+                    .title("Augmented Reality")
+                    .items([
+                      S.documentListItem()
+                        .title("Menu Background Image")
+                        .id("augmentedReality3dMenuBackgroundImage")
+                        .schemaType("menuBackgroundImage"),
+                      S.divider(),
+                      S.documentListItem()
+                        .title("Project 1")
+                        .id("augmentedReality3dProject1")
+                        .schemaType("videoProject"),
+                      S.documentListItem()
+                        .title("Project 2")
+                        .id("augmentedReality3dProject2")
+                        .schemaType("videoProject"),
+                      S.documentListItem()
+                        .title("Project 3")
+                        .id("augmentedReality3dProject3")
+                        .schemaType("videoProject"),
+                      S.documentListItem()
+                        .title("Project 4")
+                        .id("augmentedReality3dProject4")
+                        .schemaType("videoProject"),
+                      S.documentListItem()
+                        .title("Project 5")
+                        .id("augmentedReality3dProject5")
+                        .schemaType("videoProject"),
+                      S.documentListItem()
+                        .title("Project 6")
+                        .id("augmentedReality3dProject6")
+                        .schemaType("videoProject"),
+                      S.documentListItem()
+                        .title("Project 7")
+                        .id("augmentedReality3dProject7")
+                        .schemaType("videoProject"),
+                      S.documentListItem()
+                        .title("Project 8")
+                        .id("augmentedReality3dProject8")
+                        .schemaType("videoProject"),
+                      S.documentListItem()
+                        .title("Project 9")
+                        .id("augmentedReality3dProject9")
+                        .schemaType("videoProject"),
+                      S.documentListItem()
+                        .title("Project 10")
+                        .id("augmentedReality3dProject10")
+                        .schemaType("videoProject"),
+                    ])
+                ),
             ])
         ),
-      S.listItem()
-        .title("Stream")
-        .child(
-          S.list()
-            .title("Stream")
-            .items([
-              S.documentListItem()
-                .title("Menu Background Image")
-                .id("streamMenuBackgroundImage")
-                .schemaType("menuBackgroundImage"),
-              S.divider(),
-            ])
-        ),
-      S.listItem()
-        .title("About")
-        .child(
-          S.list()
-            .title("About")
-            .items([
-              S.documentListItem()
-                .title("Menu Background Image")
-                .id("aboutMenuBackgroundImage")
-                .schemaType("menuBackgroundImage"),
-              S.divider(),
-            ])
-        ),
+      // S.listItem()
+      //   .title("Stream")
+      //   .child(
+      //     S.list()
+      //       .title("Stream")
+      //       .items([
+      //         S.documentListItem()
+      //           .title("Menu Background Image")
+      //           .id("streamMenuBackgroundImage")
+      //           .schemaType("menuBackgroundImage"),
+      //         S.divider(),
+      //       ])
+      //   ),
+      // S.listItem()
+      //   .title("About")
+      //   .child(
+      //     S.list()
+      //       .title("About")
+      //       .items([
+      //         S.documentListItem()
+      //           .title("Menu Background Image")
+      //           .id("aboutMenuBackgroundImage")
+      //           .schemaType("menuBackgroundImage"),
+      //         S.divider(),
+      //       ])
+      //   ),
       ...S.documentTypeListItems().filter(
         (listItem) =>
           ![
