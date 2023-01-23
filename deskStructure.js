@@ -230,59 +230,6 @@ export default (S) =>
                         .schemaType("project"),
                     ])
                 ),
-              S.listItem()
-                .title("Drone")
-                .child(
-                  S.list()
-                    .title("Drone Projects")
-                    .items([
-                      S.documentListItem()
-                        .title("Menu Background Image")
-                        .id("dronePhotographyMenuBackgroundImage")
-                        .schemaType("menuBackgroundImage"),
-                      S.divider(),
-                      S.documentListItem()
-                        .title("Project 1")
-                        .id("droneProject1")
-                        .schemaType("project"),
-                      S.documentListItem()
-                        .title("Project 2")
-                        .id("droneProject2")
-                        .schemaType("project"),
-                      S.documentListItem()
-                        .title("Project 3")
-                        .id("droneProject3")
-                        .schemaType("project"),
-                      S.documentListItem()
-                        .title("Project 4")
-                        .id("droneProject4")
-                        .schemaType("project"),
-                      S.documentListItem()
-                        .title("Project 5")
-                        .id("droneProject5")
-                        .schemaType("project"),
-                      S.documentListItem()
-                        .title("Project 6")
-                        .id("droneProject6")
-                        .schemaType("project"),
-                      S.documentListItem()
-                        .title("Project 7")
-                        .id("droneProject7")
-                        .schemaType("project"),
-                      S.documentListItem()
-                        .title("Project 8")
-                        .id("droneProject8")
-                        .schemaType("project"),
-                      S.documentListItem()
-                        .title("Project 9")
-                        .id("droneProject9")
-                        .schemaType("project"),
-                      S.documentListItem()
-                        .title("Project 10")
-                        .id("droneProject10")
-                        .schemaType("project"),
-                    ])
-                ),
             ])
         ),
 
