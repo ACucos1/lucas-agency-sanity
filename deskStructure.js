@@ -518,6 +518,7 @@ export default (S) =>
             "siteSettings",
             "menuBackgroundImage",
             "videoProject",
+            "media.tag",
           ].includes(listItem.getId())
       ),
     ]);
