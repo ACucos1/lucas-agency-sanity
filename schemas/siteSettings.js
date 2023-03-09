@@ -9,9 +9,16 @@ export default {
       title: "Site Name",
     },
     {
-      name: "logoVideo",
+      name: "background_color",
+      type: "color",
+      title: "Background Color",
+    },
+
+    { name: "introBlurb", type: "string", title: "Intro Blurb" },
+    {
+      name: "logoMedia",
       type: "file",
-      title: "Logo Video",
+      title: "Logo Media",
     },
   ],
 };

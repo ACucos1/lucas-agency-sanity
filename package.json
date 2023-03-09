@@ -15,7 +15,11 @@
     "sanity"
   ],
   "dependencies": {
+    "@sanity/client": "^5.2.2",
+    "@sanity/color-input": "^3.0.2",
+    "@sanity/document-store": "^1.148.1",
     "@sanity/eslint-config-studio": "^2.0.1",
+    "@sanity/orderable-document-list": "^1.0.3",
     "@sanity/vision": "^2.20.0",
     "eslint": "^8.6.0",
     "prop-types": "^15.7",
