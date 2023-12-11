@@ -27,13 +27,12 @@ export default {
       //   hidden: true,
     },
     {
-      title: "Projects",
-      name: "projects",
+      title: "Images",
+      name: "images",
       type: "array",
       of: [
         {
-          type: "reference",
-          to: [{ type: "project" }],
+          type: "image",
         },
       ],
     },

@@ -19,14 +19,20 @@ export default (S, context) =>
         title: "Contact",
         child: S.document().title("Contact Page").schemaType("contactPage"),
       }),
+      S.listItem({
+        id: "projects",
+        title: "Projects",
+        child: S.documentTypeList("project"),
+      }),
       S.divider(),
       S.listItem({
         id: "subcategories-by-maincategory",
-        title: "Filtered Projects",
+        title: "Filtered Images",
         child: () => {
           // console.log(S.context.document, context);
-          return S.documentTypeList("main_category").child(
-            async (mainCategoryId) => {
+          return S.documentTypeList("main_category")
+            .filter(`_type == "main_category" && category_name != "Projects"`)
+            .child(async (mainCategoryId) => {
               const mainCategoryResponse = await fetch(
                 `https://o42gmrdk.api.sanity.io/v2022-03-25/data/query/development?query=*[_type == "main_category"] | order(_createdAt asc)`
               );
@@ -46,7 +52,6 @@ export default (S, context) =>
                     `_type == $type && parent_category._ref == $mainCategoryId`
                   )
                   .params({ type: "sub_category", mainCategoryId })
-
                   .initialValueTemplates([
                     S.initialValueTemplateItem(
                       "subcategories-by-maincategory",
@@ -67,34 +72,12 @@ export default (S, context) =>
                     }
                     // console.log("Sub Category: " + subCategoryId);
 
-                    if (subCategoryIds.includes(subCategoryId)) {
-                      return S.documentList()
-                        .title("Projects")
-                        .filter(
-                          `_type == $type && main_category._ref == $mainCategoryId && sub_category._ref == $subCategoryId`
-                        )
-                        .params({
-                          type: "project",
-                          mainCategoryId,
-                          subCategoryId,
-                        })
-                        .canHandleIntent(
-                          S.documentTypeList("project").getCanHandleIntent()
-                        )
-                        .initialValueTemplates([
-                          S.initialValueTemplateItem("projects-by-categories", {
-                            mainCategoryId,
-                            subCategoryId,
-                          }),
-                        ]);
-                    } else {
-                      return S.documentWithInitialValueTemplate(
-                        "subcategories-by-maincategory",
-                        { mainCategoryId, subCategoryId }
-                      )
-                        .schemaType("sub_category")
-                        .id(uuidv4());
-                    }
+                    return S.documentWithInitialValueTemplate(
+                      "subcategories-by-maincategory",
+                      { mainCategoryId, subCategoryId }
+                    )
+                      .schemaType("sub_category")
+                      .id(subCategoryId);
                   })
                   .canHandleIntent(
                     S.documentTypeList("main_category").getCanHandleIntent()
@@ -107,8 +90,7 @@ export default (S, context) =>
                   .id(uuidv4())
                   .schemaType("main_category");
               }
-            }
-          );
+            });
         },
       }),
       S.divider(),

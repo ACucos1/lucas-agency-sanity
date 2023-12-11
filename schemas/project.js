@@ -58,6 +58,12 @@ export default {
       validation: (Value) => Value.required().error("Project Must Have a Type"),
     },
     {
+      title: "Work Type",
+      name: "work_type",
+      type: "array",
+      of: [{ type: "reference", to: [{ type: "work_types" }] }],
+    },
+    {
       name: "project_description",
 
       type: "array",
@@ -67,7 +73,7 @@ export default {
     {
       name: "background_image",
       type: "image",
-      title: "Background Image",
+      title: "Header Image",
       fieldset: "photo",
     },
 

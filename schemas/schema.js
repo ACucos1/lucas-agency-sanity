@@ -4,6 +4,7 @@ import siteSettings from "./siteSettings";
 import subCategory from "./subCategory";
 import aboutPage from "./aboutPage";
 import contactPage from "./contactPage";
+import workType from "./workType";
 // export default [project, siteSettings, menuBackgroundImage, videoProject];
 export default [
   mainCategory,
@@ -12,5 +13,6 @@ export default [
   siteSettings,
   aboutPage,
   contactPage,
+  workType,
 ];
 // export default [sanityCategory, product];
